@@ -1,0 +1,25 @@
+int main(){
+    int n,d;
+    cout<<"value bhej bhai: ";
+    cin>>n>>d;
+    
+    try{
+        if(d == 0){
+            throw "zero se divide nhi hota bro!";
+        }
+        if(n == 0){
+            throw 0;
+        }
+        else{
+            return n/d;
+        }
+    }
+    catch(const char* e){
+        cout<<e;
+    }
+    catch(int e){
+        cout<<"Error!: n zero nhi bhai!";
+    }
+    
+    return 0;
+}

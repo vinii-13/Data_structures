@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+// class template
+template <class A>A add(A x, A y){
+    A result = x+y;
+    return result;
+}
+// function template
+template<class A, class B>void p(A a, B b){
+    cout<<"value of a: "<<a<<endl; 
+    cout<<"value of b: "<<b<<endl;
+}
+int main(){
+    float a =12.1;
+    float A = 13.34;
+    float c = add(a,A);
+    cout<<c;
+    p(12, 's');
+    return 0;
+}
